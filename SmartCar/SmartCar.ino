@@ -33,6 +33,7 @@ void loop() {
   // Maintain the speed and update the heading
   car.update();
   // Stop after moving 1 meter
+  Serial.print("");
   if (car.getDistance() >= 100) {
     car.setSpeed(0);
   }
